@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -71,16 +73,52 @@
     </video>
 
     <section>
-        <h2>Contato</h2>
+        <h2>Orçamento</h2>
         <form method="GET" action="">
-            <label>Nome</label><br>
-            <input type="text" name="nome"><br><br>
-            <label>Email</label><br>
-            <input type="text" name="email"><br><br>
-            <label>Telefone</label><br>
-            <input type="text" name="phone"><br><br>
-            <label>Comentario</label><br>
+            <fieldset>
+                <legend>Dados da Viagem</legend>
+                <label>Nome</label><br>
+                <input type="text" required name="nome"><br><br>
+    
+                <label>Email</label><br>
+                <input type="email" required name="email"><br><br>
+    
+                <label>Data de ida</label><br>
+                <input type="date" required name="dataIda"><br><br>
+    
+                <label>Data de volta</label><br>
+                <input type="date" required name="dataVolta"><br><br>
+    
+                <label>Quantidade de pesoas</label><br>
+                <input type="number" required name="quantPessoas"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Quais serviços deseja contratar? </legend><br>
+                <label><br><input type="checkbox" required name="passagens" value="=Passagens">Compra de passagens</label>
+                <label><br><input type="checkbox" required name="hospedagem" value="=hospedagem">Reserva de hospedagem</label>
+                <label><br><input type="checkbox" required name="veiculos" value="=Veiculo">Reserva de veiculos</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label><br><input type="radio" name="formaPagamento" value="cartaoCredito">Cartao de Credito </label>
+                <label><br><input type="radio" name="formaPagamento" value="cartaoDebito">Cartao de Debito </label>
+                <label><br><input type="radio" name="formaPagamento" value="pix">Pix </label>
+                <label><br><input type="radio" name="formaPagamento" value="boleto">Boleto Avista </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha prazo de pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="avista">Avista</option>
+                    <option value="5x">Em 5x sem juros</option>
+                    <option value="10x" selected>Em 5x sem jurs</option>
+                </select>
+            </fieldset>
+
+            <br><label>Comentario</label><br>
             <textarea name="comentario" cols="20" rows="5"></textarea><br><br>
+
             <button>Salvar</button>
 
         </form>
