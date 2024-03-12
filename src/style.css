@@ -1,3 +1,31 @@
-li{
-    color: rgba(4, 21, 59, 0.445);
+body{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 2.2em;
+    color: #818181;
+    margin: 0;
 }
+header{
+    background-color: #f4511e;
+    
+}
+
+section, footer, video{
+    margin: 40px;
+}
+h1{
+    font-size: 63px;
+    color: #fefffe;
+    padding: 20px;
+    text-align: center;
+}
+h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+}
+
+
+
