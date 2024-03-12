@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-   </head>
+</head>
+
 <body>
     <header>
         <nav>
-           <ol>
-            <li>Pacotes</li>
-            <li>Taxa</li>
-            <li>Contato</li>
-           </ol>
+            <ol>
+                <li>Pacotes</li>
+                <li>Taxa</li>
+                <li>Contato</li>
+            </ol>
         </nav>
-        <h1> <h1>Viagem do sonos</h1></h1>
+        <h1>Viagem do sonos</h1>
     </header>
     <section>
         <h2>Sub Titulo</h2>
@@ -36,37 +38,59 @@
             <figcaption>curitiba</figcaption>
         </figure>
     </section>
-    <video  width="500px" controls>
-        <source src="img/cvc.mp4" type="video/mp4">
-        Seu navegador não suporta o formato do video <a href="https://www.youtube.com/watch?v=QU0dXTQ5WKk">Clik aqui para assistir</a>
-    </video>
     <br><br>
     <section>
         <h2>Taxas de serviços</h2>
         <p>Veja a tabela das nossas taxas de serviços</p>
         <table border>
-            <tr>
+            <caption> Descriçao dos serviços e respectivos valores</caption>
+            <thead>
                 <th>Serviço</th>
-                <td>Valor</td>
-            </tr>
-            <tr>
-                <td>Reserva de hotel</td>
-                <td>R$ 50,00</td>
-            </tr>
-            <tr>
-                <td>Compra de Passagens</td>
-                <td>R$ 100,00</td>
-            </tr>
-            <tr>
-                <td>Aluguel de carros</td>
-                <td>R$ 20,00</td>
-            </tr>
+                <th>Valor</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reserva de hotel</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Compra de Passagens</td>
+                    <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de carros</td>
+                    <td>R$ 20,00</td>
+                </tr>
+            </tbody>
         </table>
+    </section> <br><br>
+    <video width="500px" controls>
+        <source src="img/cvc.mp4" type="video/mp4">
+        Seu navegador não suporta o formato do video <a href="https://www.youtube.com/watch?v=QU0dXTQ5WKk">Clik aqui
+            para assistir</a>
+    </video>
+
+    <section>
+        <h2>Contato</h2>
+        <form method="GET" action="">
+            <label>Nome</label><br>
+            <input type="text" name="nome"><br><br>
+            <label>Email</label><br>
+            <input type="text" name="email"><br><br>
+            <label>Telefone</label><br>
+            <input type="text" name="phone"><br><br>
+            <label>Comentario</label><br>
+            <textarea name="comentario" cols="20" rows="5"></textarea><br><br>
+            <button>Salvar</button>
+
+        </form>
     </section>
+
     <br><br>
     <footer>
         Desenvolveldor Jose
     </footer>
 
 </body>
+
 </html>
