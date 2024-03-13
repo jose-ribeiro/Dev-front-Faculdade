@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,35 +13,45 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Taxa</a></li>
-                <li><a href="#">Contato</a></li>
+                <li class="nav-item"><a href="#"><font style="vertical-align: inherit;">Pacotes</font></a></li>
+                <li class="nav-item"><a href="#"><font style="vertical-align: inherit;">Taxa</font></a></li>
+                <li class="nav-item"><a href="#"><font style="vertical-align: inherit;">Contato</font></a></li>
             </ul>
         </nav>
         <h1>Venha realizar sua viagem do sonos</h1>
-    </header>
-    <section>
+</header>
+<section id="pacotes">
         <h2>Conheça os pacotes de viagens</h2>
         <p>
             Testo para teste de pagina.
             <br><br>
             <hr>
         </p>
-        <figure>
-            <img width="320" height="240" src="img/img1.jpg" alt=" imagem da asa de um aviao">
+       
+
+    <div class="row">
+        <figure class="col text-center">
+            <img width="320" height="240"
+                    src="https://imperiodasmilhas.com/wp-content/uploads/2023/02/imagem-destacada-40.png"
+                    alt=" imagem da asa de um aviao">
             <figcaption>Avião</figcaption>
         </figure>
-        <figure>
-            <img width="320" height="240" src="img/comboriu.jpg" alt=" cidade de camboriu">
+        <figure class="col text-center">
+            <img width="320" height="240"
+                src="https://a.cdn-hotels.com/gdcs/production123/d961/95c47bb0-ecf2-4dcf-b178-fe6c98a1ec5a.jpg"
+                alt=" cidade de camboriu">
             <figcaption>Camboriu</figcaption>
         </figure>
-        <figure>
-            <img width="320" height="240" src="img/curitiba.jpg" alt=" Cidade de curitiba">
+        <figure class="col text-center">
+            <img width="320" height="240"
+                src="https://uploads.metropoles.com/wp-content/uploads/2023/06/22230801/18.-Jardim-Botanico-Creditos-SMCS.jpg"
+                alt=" Cidade de curitiba">
             <figcaption>curitiba</figcaption>
         </figure>
-    </section>
+    </div>
+</section>
     <br><br>
-    <section>
+<section id="reserva">
         <h2>Taxas de serviços</h2>
         <p>Veja a tabela das nossas taxas de serviços</p>
         <table border>
@@ -65,37 +75,35 @@
                 </tr>
             </tbody>
         </table>
-    </section> <br><br>
-    <video width="500px" controls>
-        <source src="img/cvc.mp4" type="video/mp4">
-        Seu navegador não suporta o formato do video <a href="https://www.youtube.com/watch?v=QU0dXTQ5WKk">Clik aqui
-            para assistir</a>
-    </video>
 
-    <section>
+
+</section> <br><br>
+<section id="orcamento">
         <h2>Orçamento</h2>
         <form method="GET" action="">
             <fieldset>
                 <legend>Dados da Viagem</legend>
                 <label>Nome</label><br>
                 <input type="text" required name="nome"><br><br>
-    
+
                 <label>Email</label><br>
                 <input type="email" required name="email"><br><br>
-    
+
                 <label>Data de ida</label><br>
                 <input type="date" required name="dataIda"><br><br>
-    
+
                 <label>Data de volta</label><br>
                 <input type="date" required name="dataVolta"><br><br>
-    
+
                 <label>Quantidade de pesoas</label><br>
                 <input type="number" required name="quantPessoas"><br><br>
             </fieldset>
             <fieldset>
                 <legend>Quais serviços deseja contratar? </legend><br>
-                <label><br><input type="checkbox" required name="passagens" value="=Passagens">Compra de passagens</label>
-                <label><br><input type="checkbox" required name="hospedagem" value="=hospedagem">Reserva de hospedagem</label>
+                <label><br><input type="checkbox" required name="passagens" value="=Passagens">Compra de
+                    passagens</label>
+                <label><br><input type="checkbox" required name="hospedagem" value="=hospedagem">Reserva de
+                    hospedagem</label>
                 <label><br><input type="checkbox" required name="veiculos" value="=Veiculo">Reserva de veiculos</label>
             </fieldset>
 
@@ -112,7 +120,7 @@
                 <select name="prazoPagamento">
                     <option value="avista">Avista</option>
                     <option value="5x">Em 5x sem juros</option>
-                    <option value="10x" selected>Em 5x sem jurs</option>
+                    <option value="10x" selected>Em 10x sem jurs</option>
                 </select>
             </fieldset>
 
@@ -122,13 +130,13 @@
             <button>Salvar</button>
 
         </form>
-    </section>
+</section>
 
     <br><br>
     <footer>
         Desenvolveldor Jose
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
