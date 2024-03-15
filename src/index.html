@@ -11,7 +11,7 @@
 
 <body>
     <header class="container-fluid p-2 bg-warning text-center">
-        <nav class="navbar navbar-expand-lg bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning navbar-hover">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Viagem dos Sonhos</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,49 +40,104 @@
               </div>
             </div>
           </nav>
-        <h1>Venha realizar sua viagem do sonos</h1>
+          <div id="carouselExampleCaptions" class="carousel slide" >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/comboriu.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cidade de Camboriu</h5>
+                  <p>Cidade de praias linda.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/curitiba.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cidade de curitiba</h5>
+                  <p>Otimo lugar de passeio com a familia.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/img1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Vamos viajar</h5>
+                  <p>Venha conferias nossos pacotes.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 </header>
-<section class="container-fluid bg-light text-center">
+<section class="container-fluid bg-light text-center p-2">
         <h2>Conheça os pacotes de viagens</h2>
-        <p>
-            Testo para teste de pagina.
-            <br><br>
-            
-        </p>
-       
-
-    <div class="row">
-        <figure class="col text-center">
-            <img width="320" height="240"
-                    src="https://imperiodasmilhas.com/wp-content/uploads/2023/02/imagem-destacada-40.png"
-                    alt=" imagem da asa de um aviao">
-            <figcaption>Avião</figcaption>
-        </figure>
-        <figure class="col text-center">
-            <img width="320" height="240"
-                src="https://a.cdn-hotels.com/gdcs/production123/d961/95c47bb0-ecf2-4dcf-b178-fe6c98a1ec5a.jpg"
-                alt=" cidade de camboriu">
-            <figcaption>Camboriu</figcaption>
-        </figure>
-        <figure class="col text-center">
-            <img width="320" height="240"
-                src="https://uploads.metropoles.com/wp-content/uploads/2023/06/22230801/18.-Jardim-Botanico-Creditos-SMCS.jpg"
-                alt=" Cidade de curitiba">
-            <figcaption>curitiba</figcaption>
-        </figure>
-    </div>
+        <p>Testo para teste de pagina.</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 ">
+                <img src="img/comboriu.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <h5 class="card-title">Cidade de Camboriu</h5>
+                  <h1 class="card-subtitle text-muted">R$ 5.000</h1>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Reserva</a>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Em ate 24x</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 ">
+                <img src="img/curitiba.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <h5 class="card-title">Cidade de curitiba</h5>
+                  <h1 class="card-subtitle text-muted">R$ 5.000</h1>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Reserva</a>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Em ate 24x</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 ">
+                <img src="img/img1.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <h5 class="card-title">Venha viajar com a gente</h5>
+                  <h1 class="card-subtitle text-muted">R$ 5.000</h1>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Reserva</a>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Em ate 24x</small>
+                </div>
+              </div>
+            </div>
+        </div>
 </section>
     <br><br>
-<section class="container-fluid bg-warning">
+<section class="container-fluid bg-warning text-center p-3">
         <h2>Taxas de serviços</h2>
-        <p>Veja a tabela das nossas taxas de serviços</p>
-        <table border>
+        
+        <table class="table table-warning table-striped table-hover table-bordered border-warning">
             <caption> Descriçao dos serviços e respectivos valores</caption>
-            <thead>
+            <thead class="table-secondary">
                 <th>Serviço</th>
                 <th>Valor</th>
             </thead>
-            <tbody>
+            <tbody class="table-group-divider">
                 <tr>
                     <td>Reserva de hotel</td>
                     <td>R$ 50,00</td>
@@ -101,11 +156,11 @@
 
 </section> 
 <br><br>
-<section class="container-fluid bg-light">
+<section class="container-fluid bg-light p-2">
         <h2>Orçamento</h2>
         <form method="GET" action="">
             <fieldset>
-                <legend>Dados Pessoais</legend>
+                <legend class="text-center">Faça ja seu orçamento</legend>
                 
                 <div class="mb-3">
                     <label class="form-label" for="nome">Nome: </label>
@@ -156,8 +211,9 @@
 </section>
 
     <br><br>
-    <footer class="container-fluid bg-warning">
-        Desenvolveldor Jose
+    <footer class="container-fluid bg-warning text-center">
+        @Desenvolveldor Jose 2024
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
