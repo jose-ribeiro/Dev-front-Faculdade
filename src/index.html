@@ -10,22 +10,44 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li class="nav-item"><a href="#"><font style="vertical-align: inherit;">Pacotes</font></a></li>
-                <li class="nav-item"><a href="#"><font style="vertical-align: inherit;">Taxa</font></a></li>
-                <li class="nav-item"><a href="#"><font style="vertical-align: inherit;">Contato</font></a></li>
-            </ul>
-        </nav>
+    <header class="container-fluid p-2 bg-warning text-center">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Viagem dos Sonhos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Taxas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contato
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <h1>Venha realizar sua viagem do sonos</h1>
 </header>
-<section id="pacotes">
+<section class="container-fluid bg-light text-center">
         <h2>Conheça os pacotes de viagens</h2>
         <p>
             Testo para teste de pagina.
             <br><br>
-            <hr>
+            
         </p>
        
 
@@ -51,7 +73,7 @@
     </div>
 </section>
     <br><br>
-<section id="reserva">
+<section class="container-fluid bg-warning">
         <h2>Taxas de serviços</h2>
         <p>Veja a tabela das nossas taxas de serviços</p>
         <table border>
@@ -77,63 +99,64 @@
         </table>
 
 
-</section> <br><br>
-<section id="orcamento">
+</section> 
+<br><br>
+<section class="container-fluid bg-light">
         <h2>Orçamento</h2>
         <form method="GET" action="">
             <fieldset>
-                <legend>Dados da Viagem</legend>
-                <label>Nome</label><br>
-                <input type="text" required name="nome"><br><br>
+                <legend>Dados Pessoais</legend>
+                
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome: </label>
+                    <input type="text" class="form-control" name="nome" id="nome">
+                </div>
+                
 
-                <label>Email</label><br>
-                <input type="email" required name="email"><br><br>
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email</label><br>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                
 
-                <label>Data de ida</label><br>
-                <input type="date" required name="dataIda"><br><br>
+                <div class="mb-3">
+                    <label class="form-label" for="ida">Data de ida</label>
+                    <input type="date" class="form-control" name="date" id="ida">
+                </div>
+                
 
-                <label>Data de volta</label><br>
-                <input type="date" required name="dataVolta"><br><br>
+                <div class="mb-3">
+                    <label class="form-label" for="volta">Data de volta</label>
+                    <input type="date" class="form-control" name="date" id="volta">
+                </div>
 
-                <label>Quantidade de pesoas</label><br>
-                <input type="number" required name="quantPessoas"><br><br>
             </fieldset>
             <fieldset>
-                <legend>Quais serviços deseja contratar? </legend><br>
-                <label><br><input type="checkbox" required name="passagens" value="=Passagens">Compra de
-                    passagens</label>
-                <label><br><input type="checkbox" required name="hospedagem" value="=hospedagem">Reserva de
-                    hospedagem</label>
-                <label><br><input type="checkbox" required name="veiculos" value="=Veiculo">Reserva de veiculos</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Escolha a forma de pagamento</legend>
-                <label><br><input type="radio" name="formaPagamento" value="cartaoCredito">Cartao de Credito </label>
-                <label><br><input type="radio" name="formaPagamento" value="cartaoDebito">Cartao de Debito </label>
-                <label><br><input type="radio" name="formaPagamento" value="pix">Pix </label>
-                <label><br><input type="radio" name="formaPagamento" value="boleto">Boleto Avista </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Escolha prazo de pagamento</legend>
-                <select name="prazoPagamento">
-                    <option value="avista">Avista</option>
-                    <option value="5x">Em 5x sem juros</option>
-                    <option value="10x" selected>Em 10x sem jurs</option>
-                </select>
+                <legend>Quais serviços deseja contratar? </legend>
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" name="passagens" value="=Passagens" id="ida">
+                    <label class="form-label" for="ida">Compra de passagens</label>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" name="hospedagem" value="=hospedagem" id="hospedagem">
+                    <label  class="form-label" for="hospedagem">Reserva de hospedagem</label>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" name="veiculos" value="=Veiculo" id="veiculo">
+                    <label class="form-label" for="veiculo">Aluguel de veiculos</label>
+                </div>
             </fieldset>
 
             <br><label>Comentario</label><br>
             <textarea name="comentario" cols="20" rows="5"></textarea><br><br>
 
-            <button>Salvar</button>
+            <button class="btn btn-secondary">Salvar</button>
 
         </form>
 </section>
 
     <br><br>
-    <footer>
+    <footer class="container-fluid bg-warning">
         Desenvolveldor Jose
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

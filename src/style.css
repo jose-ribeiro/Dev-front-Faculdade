@@ -11,9 +11,6 @@ header{
     
 }
 
-section, footer, video{
-    margin: 40px;
-}
 h1{
     font-size: 63px;
     color: #fefffe;
@@ -25,36 +22,6 @@ h2{
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
-}
-nav li a{
-    padding: 10px;
-    color: #fefffe;
-    text-decoration: none;
-
-}
-nav li {
-    float: right;
-
-}
-
-nav ul {
-    float: right;
-    list-style: none;
-}
-
-nav{
-    font-size: 12px;
-    letter-spacing: 4px;
-    height: 50px;
-    background-color: #ce4b00;
-    padding-right: 40px;
-}
-
-footer{
-    text-align: center;
-    background-color: #303030;
-    margin: auto;
-    font-size: 20px;
 }
 
 table{
